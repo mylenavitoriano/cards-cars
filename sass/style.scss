@@ -16,6 +16,7 @@ $white: #F2F2F2;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: $white;
 
     @media(max-width: 600px){
         height: auto;
