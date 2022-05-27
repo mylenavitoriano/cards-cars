@@ -56,6 +56,7 @@
   font-family: "Lexend", sans-serif;
   transition: all ease 0.3s;
   border: 2px solid #F2F2F2;
+  cursor: pointer;
 }
 .container .cards .card button:hover {
   background: transparent;
