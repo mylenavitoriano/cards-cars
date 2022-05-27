@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+    padding: 1rem;
+  }
+}
+.container .cards {
+  max-width: 840px;
+  display: flex;
+  font-family: "Lexend", sans-serif;
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  .container .cards {
+    max-width: 300px;
+    flex-direction: column;
+  }
+}
+.container .cards .card {
+  padding: 55px 35px;
+}
+.container .cards .card img {
+  margin-bottom: 50px;
+}
+.container .cards .card h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: #F2F2F2;
+  margin-bottom: 18px;
+}
+.container .cards .card p {
+  color: #F2F2F2;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.container .cards .card button {
+  background: #F2F2F2;
+  border: 0;
+  border-radius: 50px;
+  height: 45px;
+  padding: 0 24px;
+  font-weight: 500;
+  font-family: "Lexend", sans-serif;
+  transition: all ease 0.3s;
+  border: 2px solid #F2F2F2;
+}
+.container .cards .card button:hover {
+  background: transparent;
+  color: #F2F2F2;
+}
+.container .cards .orange {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+@media (max-width: 600px) {
+  .container .cards .orange {
+    border-radius: 10px 10px 0 0;
+  }
+}
+.container .cards .orange button {
+  color: hsl(31deg, 77%, 52%);
+}
+.container .cards .cyan {
+  background: hsl(184deg, 100%, 22%);
+}
+.container .cards .cyan button {
+  color: hsl(184deg, 100%, 22%);
+}
+.container .cards .dark-cyan {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+@media (max-width: 600px) {
+  .container .cards .dark-cyan {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.container .cards .dark-cyan button {
+  color: hsl(179deg, 100%, 13%);
+}

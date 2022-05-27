@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend:wght@400;500&display=swap');
+
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$dark-cyan: hsl(179, 100%, 13%);
+$white: #F2F2F2;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    @media(max-width: 600px){
+        height: auto;
+        padding: 1rem;
+    }
+
+    .cards{
+        max-width: 840px;
+        display: flex;
+        font-family: 'Lexend', sans-serif;
+        font-size: 15px;
+
+        @media(max-width: 600px){
+            max-width: 300px;
+            flex-direction: column;
+        }
+
+        .card{
+            padding: 55px 35px;
+
+            img{
+                margin-bottom: 50px;
+            }
+
+            h1{
+                font-family: 'Big Shoulders Display', sans-serif;
+                color: $white;
+                margin-bottom: 18px;
+            }
+
+            p{
+                color: $white;
+                font-weight: 400;
+                margin-bottom: 50px;
+            }
+
+            button{
+                background: $white;
+                border: 0;
+                border-radius: 50px;
+                height: 45px;
+                padding: 0 24px;
+                font-weight: 500;
+                font-family: 'Lexend', sans-serif;
+                transition: all ease .3s;
+                border: 2px solid $white;
+
+                &:hover{
+                    background: transparent;
+                    color: $white;
+                    
+                }
+            }
+        }
+
+        .orange{
+            background: $orange;
+            border-radius: 10px 0 0 10px;
+
+            @media(max-width: 600px){
+                border-radius: 10px 10px 0 0;
+            }
+
+            button{
+                color: $orange;
+            }
+        }
+
+        .cyan{
+            background: $cyan;
+
+            button{
+                color: $cyan;
+            }
+        }
+
+        .dark-cyan{
+            background: $dark-cyan;
+            border-radius: 0 10px 10px 0;
+
+            @media(max-width: 600px){
+                border-radius: 0 0 10px 10px;
+            }
+
+            button{
+                color: $dark-cyan;
+            }
+        }
+    }
+}
